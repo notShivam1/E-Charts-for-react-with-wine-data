@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactECharts from 'echarts-for-react';
 import { data } from '../data/WineData.js'
+import '../css/Plot.css';
 
 function ScatterPlot() {
     const getColorIntensityAndHue = () => {
@@ -30,8 +31,12 @@ function ScatterPlot() {
         ]
     };
 
-    return <ReactECharts option={options} />;
-
+    return (
+        <div>
+            <h1 className="h1">Scatter Plot</h1>
+            <ReactECharts option={options} />
+        </div>
+    )
 }
 
 export default ScatterPlot;

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactECharts from 'echarts-for-react';
-import { data } from '../data/WineData.js'
+import { data } from '../data/WineData.jsx'
 import '../css/Plot.css';
 
 function ScatterPlot() {
